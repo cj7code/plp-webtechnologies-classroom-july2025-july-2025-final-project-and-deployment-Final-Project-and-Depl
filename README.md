@@ -89,8 +89,7 @@ Deploy your project and confirm that:
 * Successful live deployment with a working link
 * Evidence of following best practices
 
-========================================================
-========================================================
+==================================================================================================================================
 
 # Student's README
 # 🩺 Lumenra – Nursing Education Platform
@@ -124,7 +123,7 @@ The purpose of Lumenra is to:
 
 ## 🌐 Site Structure
 
-The website has **4 main pages**:
+The website has **multiple pages**:
 
 1. **Home (index.html)**  
    - Introduction to Lumenra.  
@@ -175,11 +174,20 @@ lumenra/
 ### 🏠 Home Page
 ![Home Page](./images/home.png)
 
+## About Page
+![About Page](./images/about.png)
+
+## Courses Pages
+![Courses Page](./images/courses.png)
+
+## Resources Page
+![Resources Page](./images/resources.png)
+
 ### 📖 Notes Page
 ![Notes Page](./images/notes.png)
 
 ### 📝 Quizzes Page
-![Quizzes Page](./images/quizzes.png)
+![Quizzes Page](./images/quiz.png)
 
 ### ✉️ Contact Page
 ![Contact Page](./images/contact.png)
@@ -208,17 +216,12 @@ lumenra/
 ## 🚀 Deployment
 
 This project is deployed with **Vercel**.  
-
-### Prerequisites
-- [GitHub Account](https://github.com)  
-- [Vercel Account](https://vercel.com)  
-
+ 
 
 Live Demo
 
-👉 https://nurselearn.vercel.app
+👉 https://lumenra.vercel.app/
 
-(Replace with your actual deployed link after publishing.)
 
 🛠️ Tech Stack
 
