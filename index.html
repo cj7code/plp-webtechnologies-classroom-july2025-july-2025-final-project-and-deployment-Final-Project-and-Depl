@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lumenra - Home</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- Header & Navigation (consistent across all pages) -->
+        <header>
+            <div class="header-container">
+                <!-- App Name / Logo -->
+                <div class="logo">
+                <a href="index.html">Lumenra</a>
+                </div>
+                <nav>
+                <!-- Navigation links -->
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <!-- ChatGPT AI Search -->
+                <div class="ai-search">
+                    <form id="aiSearchForm" onsubmit="openChatGPT(event)">
+                    <input type="text" id="chatQuery" placeholder="Ask ChatGPT..." required>
+                    <button type="submit" aria-label="Search" title="Search">🔍</button>
+                    </form>
+                </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section with brief intro -->
+        <section class="hero">
+            <h1>Welcome to Lumenra</h1>
+            <p>Your gateway to accessible and affordable nursing education.</p>
+            <button onclick="location.href='courses.html'">Explore Courses</button>
+        </section>
+
+        <!-- Feature Cards (real world nursing education focus) -->
+        <section class="features">
+            <div class="card">
+                <h2>📘 Quality Courses</h2>
+                <p>Learn from structured modules designed by nurse educators.</p>
+            </div>
+            <div class="card">
+                <h2>💻 Accessible Anywhere</h2>
+                <p>Study online, on your own time – anywhere, everywhere!</p>
+            </div>
+            <div class="card">
+                <h2>💰 Support Us</h2>
+                <p>Free content, with premium quizzes</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Lumenra. All Rights Reserved.</p>
+        </footer>
+        <script defer src="js/script.js"></script>
+    </body>
+</html>

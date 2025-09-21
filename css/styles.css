@@ -1,0 +1,308 @@
+/* =======================
+   Global & Body Styles
+   ======================= */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.content {
+    flex: 1; /* pushes footer down */
+}
+
+/* =======================
+   Header Styles
+   ======================= */
+header {
+    background: #0a5275;
+    color: white;
+    padding: 10px 0; /* reduced vertical padding */
+}
+
+.header-container {
+    max-width: 2000px;  /* reduced width */
+    margin: 0 auto;      /* center horizontally */
+    padding: 0 20px;     /* horizontal padding */
+}
+
+header .logo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    float: left; /* keeps logo on the left */
+    margin-right: 20px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column; /* nav links above search */
+    align-items: flex-end;   /* right-aligned */
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* space between links */
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    background-color: grey;  /* darker shade of header background */
+    padding: 2px;          /* add some space around text */
+    border-radius: 4px;         /* rounded corners */
+    transition: background 0.3s ease;
+}
+
+
+.nav-links li a.active {
+    text-decoration: underline;
+}
+
+/* AI ChatGPT Search */
+.ai-search {
+    margin-top: 4px;      /* minimal gap under nav links */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ai-search form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.ai-search input {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 13px;
+    width: 200px;   /* compact width */
+    outline: none;
+}
+
+.ai-search button {
+    background: white;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.ai-search button:hover {
+    background: #0056b3;
+}
+
+/* css for main container */
+.main-container {
+    max-width: 2000px;      /* limits content width */
+    margin: 0 auto;          /* centers the container */
+    padding: 0 20px;         /* adds space on left and right */
+}
+
+/* Main container styling for contactform */
+.contact-page .main-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+/* Contact form labels */
+#contactForm label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs and textarea */
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #007bff; /* Highlight when typing */
+}
+
+/* Send button */
+/* Send button styling */
+#contactForm button {
+    background: #007bff;       /* button color */
+    color: #fff;
+    border: none;
+    padding: 5px 12px;         /* smaller size */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;           /* slightly smaller font */
+    transition: background 0.3s ease;
+    align-self: flex-end;       /* aligns button to the right */
+    display: inline-block;     
+}
+
+#contactForm button:hover {
+    background-color: #0056b3; /* darker on hover */
+}
+
+
+/* Form message (after submission) */
+#formMessage {
+    margin-top: 15px;
+    font-size: 14px;
+    color: green;
+}
+
+/* =======================
+   Hero Section
+   ======================= */
+.hero {
+    background: url('../images/health.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: #f39c12;
+    border: none;
+    cursor: pointer;
+}
+
+/* =======================
+   Features & Cards
+   ======================= */
+.features, .courses {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card, .course-card {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 250px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.course-card.premium {
+    border: 2px solid gold;
+}
+
+/* Buttons */
+/* Professional button style */
+/* Highly specific button style for links */
+/* Container for buttons inside the card */
+.btn-container {
+    display: flex;           /* flex layout for buttons */
+    justify-content: center; /* center horizontally */
+    gap: 10px;               /* space between buttons */
+    margin-top: 15px;        /* spacing from text above */
+}
+
+/* Buttons */
+.btn {
+    background-color: #9a9c9f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;       /* slightly smaller */
+    font-size: 13px;         /* smaller font */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0a5275;
+}
+
+
+
+/* =======================
+   Footer Styles
+   ======================= */
+footer {
+    background: #0a5275;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* footer sticks to bottom */
+}
+
+/* =======================
+   Contact Form
+   ======================= */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+/* =======================
+   Responsive Adjustments
+   ======================= */
+@media screen and (max-width: 768px) {
+    .header-container {
+        padding: 0 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .ai-search {
+        justify-content: center;
+        margin-top: 6px;
+    }
+
+    .ai-search input {
+        width: 120px;
+    }
+}

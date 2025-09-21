@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lumenra - Contact</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script defer src="js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <!-- App Name / Logo -->
+                <div class="logo">
+                <a href="index.html">Lumenra</a>
+                </div>
+                <nav>
+                <!-- Navigation links -->
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <!-- ChatGPT AI Search -->
+                <div class="ai-search">
+                    <form id="aiSearchForm" onsubmit="openChatGPT(event)">
+                    <input type="text" id="chatQuery" placeholder="Ask ChatGPT..." required>
+                    <button type="submit" aria-label="Search" title="Search">🔍</button>
+                    </form>
+                </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Contact Form -->
+        <main class="content contact-page">
+            <div class="main-container">
+                <h1>Contact Us</h1>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" placeholder="Write your message here..." required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+                <p id="formMessage"></p>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 Lumenra. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>

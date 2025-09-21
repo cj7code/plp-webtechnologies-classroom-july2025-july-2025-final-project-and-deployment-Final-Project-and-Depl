@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lumenra - Courses</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <!-- App Name / Logo -->
+                <div class="logo">
+                <a href="index.html">Lumenra</a>
+                </div>
+                <nav>
+                <!-- Navigation links -->
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <!-- ChatGPT AI Search -->
+                <div class="ai-search">
+                    <form id="aiSearchForm" onsubmit="openChatGPT(event)">
+                    <input type="text" id="chatQuery" placeholder="Ask ChatGPT..." required>
+                    <button type="submit" aria-label="Search" title="Search">🔍</button>
+                    </form>
+                </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Courses Section -->
+        <main class="content">
+            <div class="main-container">
+                <h1>Our Courses</h1>
+                <div class="courses">
+
+                <!-- Anatomy Course -->
+                <div class="course-card">
+                    <h2>📖 Anatomy & Physiology</h2>
+                    <p>Learn the structure and functions of the human body.</p>
+                    <div class="btn-container">
+                        <button onclick="location.href='notes/anatomy.html'" class="btn">View Notes</button>
+                        <button onclick="location.href='quizzes/anatomy-quiz.html'" class="btn">Take Quiz</button>
+                    </div>
+                </div>
+
+                <!-- Mental Health -->
+                <div class="course-card">
+                    <h2>🧠 Mental Health & Psychiatric Nursing</h2>
+                    <p>Understand nursing care in mental health settings.</p>
+                    <div class="btn-container">
+                        <button onclick="location.href='notes/mental.html'" class="btn">View Notes</button>
+                        <button onclick="location.href='quizzes/mental-quiz.html'" class="btn">Take Quiz</button>
+                    </div>
+                </div>
+
+                <!-- Psychology -->
+                <div class="course-card">
+                    <h2>🧩 Psychology</h2>
+                    <p>Explore human behavior and psychological principles.</p>
+                    <div class="btn-container">
+                        <button onclick="location.href='notes/psychology.html'" class="btn">View Notes</button>
+                        <button onclick="location.href='quizzes/psychology-quiz.html'" class="btn">Take Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Lumenra. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
