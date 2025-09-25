@@ -12,26 +12,22 @@ function openChatGPT(event) {
   window.open(chatGPTUrl, '_blank');
 }
 
-
-// Contact form validation and success message
+// Contact form validation
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contactForm");
+
     if (form) {
         form.addEventListener("submit", (e) => {
-            e.preventDefault();
-
             // Simple validation
             const name = document.getElementById("name").value.trim();
             const email = document.getElementById("email").value.trim();
             const message = document.getElementById("message").value.trim();
 
             if (!name || !email || !message) {
-                document.getElementById("formMessage").innerText = "All fields are required!";
-                return;
+                e.preventDefault(); // stop submission only when invalid
+                document.getElementById("formMessage").innerText =
+                    "⚠️ All fields are required!";
             }
-
-            document.getElementById("formMessage").innerText = "✅ Thank you! Your message has been sent.";
-            form.reset();
         });
     }
 });
